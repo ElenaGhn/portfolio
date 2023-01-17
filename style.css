@@ -1,0 +1,41 @@
+h1,
+h4,
+h5,
+h6,
+p {
+  color: #f7fdfc;
+  position: relative;
+  text-shadow: 4px 4px 8px rgb(0, 92, 78);
+}
+.headerSection {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headerSection::before {
+  content: '';
+  background-image: url(assets/technology.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  bottom: 0px;
+  left: 15px;
+  opacity: 0.9;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.circle {
+  width: 16.5rem;
+  height: 18.5rem;
+  border-radius: 15% 1% 15% 1%;
+  background-color: rgba(88, 93, 97, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15%;
+}
