@@ -19,11 +19,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
   </head>
-  <body class="container">
+  <body>
     <section id="intrduction">
       <div class="headerSection">
         <div class="container text-light">
-          <h1 class="display-4 pt-5 font-weight-bold">
+          <h1 class="display-4 pt-3 font-weight-bold">
             Welcome to my Portfolio
           </h1>
           <div class="secondTitle">
@@ -35,7 +35,7 @@
             <div class="circle-contentWwrapper">
               <h6 class="mt-3"><i>About me</i></h6>
               <h4 class="text-start mx-4">Elena</h4>
-              <p class="m-3">
+              <p class="m-1">
                 Responsible, creative, open-minded, friendly and
                 ambitious future web developer. This is how I see
                 myself. Now, however, I’d like to belong to some
@@ -50,39 +50,59 @@
     </section>
 
     <hr class="m-3" />
-    <section class="row bg-body-white" id="content">
+    <section class="row bg-white p-5" id="content">
       <h3 class="text-center display-6 font-weight-bold">My Work</h3>
 
-      <div class="card mx-sm-3 mb-2" style="width: 18rem">
+      <div class="card m-3" style="width: 18rem">
         <img
           class="card-img-top my-2"
           src="assets/Cv-Foto.jpg"
           alt="Card image cap"
         />
         <div class="card-body text-center">
-          <a
-            href="https://elenaghn.github.io/cv/"
-            target="_blank"
-            class="btn btn-secondary"
-            >My CV</a
-          >
+          <div class="card-body">
+            <h6 class="card-title">My interactive CV</h6>
+            <p class="card-tex text-dark">
+              Have a look at my responsive CV made of HTML5 and
+              bootstrap 5. PDF for download available.
+            </p>
+            <a
+              href="https://elenaghn.github.io/cv/"
+              target="_blank"
+              class="btn btn-info"
+              >My CV</a
+            >
+          </div>
         </div>
       </div>
-      <div class="card mx-sm-3 mb-2" style="width: 18rem">
+      <div class="card m-3" style="width: 18rem">
         <img
           class="card-img-top my-2"
           src="assets/work.jpg"
           alt="Card image cap"
         />
         <div class="card-body text-center">
+          <h6 class="card-title mt-3">My first Homework</h6>
+          <p class="card-tex text-dark">
+            First use of HTML5, CSS3 and a little JS. I reproduced
+            ngdevs.net, of course responsive.
+          </p>
           <a
             href="https://elenaghn.github.io/ngDevs_page/"
             target="_blank"
-            class="btn btn-secondary"
+            class="btn btn-info"
             >My first homework</a
           >
         </div>
       </div>
     </section>
+    <hr class="m-3" />
+    <footer class="footer-container mr-5">
+      <div class="text-center text-light">
+        <h4 class="p-3">
+          Feel free to contact me! <i class="bi bi-emoji-smile"></i>
+        </h4>
+      </div>
+    </footer>
   </body>
 </html>
