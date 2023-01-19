@@ -4,11 +4,13 @@ h5,
 h6,
 p {
   color: #f7fdfc;
-  position: relative;
-  text-shadow: 4px 4px 8px rgb(0, 92, 78);
+  /* position: relative; */
+  text-shadow: 4px 4px 8px rgba(29, 43, 51, 255);
 }
 .headerSection {
   width: 100%;
+  min-height: 400px;
+  max-height: 800px;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,33 +23,32 @@ p {
   top: 0px;
   right: 15px;
   bottom: 0px;
-  left: 15px;
+  left: 0px;
   opacity: 0.9;
+  z-index: -1;
 }
 .font-weight-bold {
   font-weight: 700 !important;
 }
 
 .circle {
-  width: 17rem;
+  width: 18rem;
   height: 18rem;
-  border-radius: 15% 1% 15% 1%;
-  background-color: rgba(88, 93, 97, 255);
+  border-radius: 20% 5% 20% 5%;
+  background-color: rgba(29, 43, 51, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 6%;
+  -webkit-border-radius: 20% 5% 20% 5%;
+  -moz-border-radius: 20% 5% 20% 5%;
+  -ms-border-radius: 20% 5% 20% 5%;
+  -o-border-radius: 20% 5% 20% 5%;
 }
 
 .footer-container {
   content: '';
   background-image: url(assets/technology.jpg);
-  background-color: #f7fdfc;
-  width: 100%;
-  height: auto;
   background-size: cover;
-  background-repeat: no-repeat;
   opacity: 0.9;
-  margin-bottom: 10px;
 }
