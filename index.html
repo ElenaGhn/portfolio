@@ -26,17 +26,15 @@
           Welcome to my Portfolio
         </h1>
         <div class="secondTitle">
-          <h4 class="d-flex justify-content-center text-light m-3">
+          <h5 class="d-flex justify-content-center text-white m-2">
             < Enthusiastic Coding lover />
-          </h4>
+          </h5>
         </div>
-        <div class="circle m-5">
-          <div
-            class="circle-contentWwrapper d-flex-justify-content-start"
-          >
-            <h6 class="mt-3"><i>About me</i></h6>
-            <h4 class="text-start mx-4">Elena</h4>
-            <p class="m-2">
+        <div class="circle m-5 d-flex-end">
+          <div class="circle-contentWwrapper">
+            <h6 class="mt-2"><i class="miniTitle">About me</i></h6>
+            <h3 class="text-start mx-5">Elena</h3>
+            <p class="description m-2 text-center text-light">
               Responsible, creative, open-minded, friendly and
               ambitious future web developer. This is how I see
               myself. Now, however, I’d like to belong to some bigger
@@ -47,9 +45,10 @@
         </div>
       </div>
     </section>
-    <hr class="mt-4" />
+
     <section class="row bg-white p-4" id="content">
-      <h3 class="text-center display-6 font-weight-bold">My Work</h3>
+      <hr class="mt-4" />
+      <h2 class="text-center font-weight-bold">My Work</h2>
 
       <div class="card m-3" style="width: 18rem">
         <img
@@ -60,14 +59,14 @@
         <div class="card-body text-center">
           <div class="card-body">
             <h6 class="card-title">My interactive CV</h6>
-            <p class="card-tex text-dark">
+            <p class="card-text text-dark">
               Have a look at my responsive CV made of HTML5 and
               bootstrap 5. PDF for download available.
             </p>
             <a
               href="https://elenaghn.github.io/cv/"
               target="_blank"
-              class="btn btn-info"
+              class="btn btn-secondary"
               >My CV</a
             >
           </div>
@@ -81,19 +80,68 @@
         />
         <div class="card-body text-center">
           <h6 class="card-title mt-3">My first Homework</h6>
-          <p class="card-tex text-dark">
+          <p class="card-text text-dark">
             First use of HTML5, CSS3 and a little JS. I reproduced
             ngdevs.net, of course responsive.
           </p>
           <a
             href="https://elenaghn.github.io/ngDevs_page/"
             target="_blank"
-            class="btn btn-info"
+            class="btn btn-secondary"
             >My first homework</a
           >
         </div>
       </div>
+      <div class="card m-3" style="width: 18rem">
+        <img
+          class="card-img-top my-2"
+          src="assets/geometry-g.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body text-center">
+          <div class="card-body">
+            <h6 class="card-title">Great Calculator</h6>
+            <p class="card-text text-dark">
+              I am currently programming the Great Calculator with JS,
+              HTML and CSS web programming.
+            </p>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Work in Progress
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem">
+        <img
+          class="card-img-top my-2"
+          src="assets/abstract-g.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body text-center">
+          <div class="card-body">
+            <h6 class="card-title">Here comes the Robot Douglas</h6>
+            <p class="card-text text-dark">
+              In this project, I will modify and add styles to an HTML
+              robot named Douglas.
+            </p>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Work in Progress
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
+
     <hr class="m-3" />
     <footer class="footer-container">
       <div class="text-center text-light">
@@ -102,5 +150,47 @@
         </h4>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="staticBackdropLabel">
+              Next Project
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Coming Soon</p>
+          </div>
+          <div class="modal-footer">
+            <p>
+              <i class="bi bi-hourglass-split"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 2-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
