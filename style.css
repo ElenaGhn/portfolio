@@ -7,6 +7,7 @@ h3,
   color: #f7fdfc;
   text-shadow: 2px 2px 4px black;
 }
+
 .headerSection {
   width: 100%;
   min-height: 500px;
@@ -27,14 +28,13 @@ h3,
   opacity: 0.9;
   z-index: -1;
 }
-
 .font-weight-bold {
   font-weight: 700 !important;
 }
 
 .circle {
-  width: 20rem;
-  height: 20rem;
+  width: 19rem;
+  height: 19rem;
   border-radius: 20% 1% 20% 1%;
   background-image: url(assets/nature-g.jpg);
   display: flex;
