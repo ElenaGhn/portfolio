@@ -19,44 +19,49 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
   </head>
-  <body>
+  <body class="p-3">
     <section class="headerSection" id="intrduction">
-      <div class="container text-light">
-        <h1 class="display-3 pt-3 m-2 font-weight-bold">
+      <div class="text-light">
+        <h1 class="display-3 pt-3 mx-3 font-weight-bold">
           Welcome to my Portfolio
         </h1>
         <div class="secondTitle">
-          <h5 class="d-flex justify-content-center text-white m-2">
+          <h5 class="d-flex justify-content-center text-white m-3">
             < Enthusiastic Coding lover />
           </h5>
         </div>
-        <div class="circle m-5 d-flex-end">
-          <div class="circle-contentWwrapper">
-            <h6 class="mt-2"><i class="miniTitle">About me</i></h6>
-            <h3 class="text-start mx-5">Elena</h3>
-            <p class="description m-2 text-center text-light">
-              Responsible, creative, open-minded, friendly and
-              ambitious future web developer. This is how I see
-              myself. Now, however, I’d like to belong to some bigger
-              team, bigger organization, which will allow me to work
-              even on bigger projects and have a bigger impact.
-            </p>
+        <div class="d-flex justify-content-lg-start start mt-5">
+          <div class="circle mx-md-5">
+            <div class="circle-contentWwrapper">
+              <h6 class="mt-2"><i class="miniTitle">About me</i></h6>
+              <h3 class="text-start mx-4">Elena</h3>
+              <p class="description m-1 text-center text-light">
+                Responsible, creative, open-minded, friendly and
+                ambitious future web developer. This is how I see
+                myself. Now, however, I’d like to belong to some
+                bigger team, bigger organization, which will allow me
+                to work even on bigger projects and have a bigger
+                impact.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="row bg-white p-4" id="content">
-      <hr class="mt-4" />
-      <h2 class="text-center font-weight-bold">My Work</h2>
+    <section class="row pt-5" id="content">
+      <hr class="my-5" />
+      <h2 class="d-inline text-center font-weight-bold mb-3">
+        My Work
+      </h2>
 
-      <div class="card m-3" style="width: 18rem">
+      <div class="card mb-2 bg-light" style="width: 16rem">
         <img
           class="card-img-top my-2"
           src="assets/Cv-Foto.jpg"
           alt="Card image cap"
         />
-        <div class="card-body text-center">
+        <div class="card-body text-start">
           <div class="card-body">
             <h6 class="card-title">My interactive CV</h6>
             <p class="card-text text-dark">
@@ -72,33 +77,35 @@
           </div>
         </div>
       </div>
-      <div class="card m-3" style="width: 18rem">
+      <div class="card mb-2 bg-light" style="width: 16rem">
         <img
           class="card-img-top my-2"
           src="assets/work.jpg"
           alt="Card image cap"
         />
-        <div class="card-body text-center">
-          <h6 class="card-title mt-3">My first Homework</h6>
-          <p class="card-text text-dark">
-            First use of HTML5, CSS3 and a little JS. I reproduced
-            ngdevs.net, of course responsive.
-          </p>
-          <a
-            href="https://elenaghn.github.io/ngDevs_page/"
-            target="_blank"
-            class="btn btn-secondary"
-            >My first homework</a
-          >
+        <div class="card-body text-start">
+          <div class="card-body">
+            <h6 class="card-title">My first Homework</h6>
+            <p class="card-text text-dark">
+              First use of HTML5, CSS3 and a little JS. I reproduced
+              ngdevs.net, of course responsive.
+            </p>
+            <a
+              href="https://elenaghn.github.io/ngDevs_page/"
+              target="_blank"
+              class="btn btn-secondary"
+              >My first homework</a
+            >
+          </div>
         </div>
       </div>
-      <div class="card m-3" style="width: 18rem">
+      <div class="card mb-2 bg-light" style="width: 16rem">
         <img
           class="card-img-top my-2"
           src="assets/geometry-g.jpg"
           alt="Card image cap"
         />
-        <div class="card-body text-center">
+        <div class="card-body text-start">
           <div class="card-body">
             <h6 class="card-title">Great Calculator</h6>
             <p class="card-text text-dark">
@@ -116,18 +123,18 @@
           </div>
         </div>
       </div>
-      <div class="card m-3" style="width: 18rem">
+      <div class="card mb-2 bg-light" style="width: 16rem">
         <img
           class="card-img-top my-2"
           src="assets/abstract-g.jpg"
           alt="Card image cap"
         />
-        <div class="card-body text-center">
+        <div class="card-body text-start">
           <div class="card-body">
-            <h6 class="card-title">Here comes the Robot Douglas</h6>
+            <h6 class="card-title">The Robot Douglas</h6>
             <p class="card-text text-dark">
               In this project, I will modify and add styles to an HTML
-              robot named Douglas.
+              robot named Douglas using JS and CSS.
             </p>
             <button
               type="button"
@@ -142,8 +149,8 @@
       </div>
     </section>
 
-    <hr class="m-3" />
-    <footer class="footer-container">
+    <hr class="my-4" />
+    <footer class="footer-container w-100 h-auto">
       <div class="text-center text-light">
         <h4 class="p-3">
           Feel free to contact me! <i class="bi bi-emoji-smile"></i>
@@ -174,7 +181,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body text-dark">
             <p>Coming Soon</p>
           </div>
           <div class="modal-footer">
@@ -185,7 +192,6 @@
         </div>
       </div>
     </div>
-    <!--modal 2-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

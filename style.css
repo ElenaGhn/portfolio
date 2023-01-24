@@ -5,12 +5,12 @@ h3,
 .miniTitle,
 .description {
   color: #f7fdfc;
-  /* position: relative; */
   text-shadow: 2px 2px 4px black;
 }
+
 .headerSection {
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   max-height: 800px;
   height: 100vh;
   background-size: cover;
@@ -33,22 +33,23 @@ h3,
 }
 
 .circle {
-  width: 18rem;
+  width: 19rem;
   height: 19rem;
   border-radius: 20% 1% 20% 1%;
   background-image: url(assets/nature-g.jpg);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  -webkit-border-radius: 20% 1% 20% 1%;
-  -moz-border-radius: 20% 1% 20% 1%;
-  -ms-border-radius: 20% 1% 20% 1%;
-  -o-border-radius: 20% 1% 20% 1%;
 }
 
 .footer-container {
   content: '';
   background-image: url(assets/technology.jpg);
   background-size: cover;
+}
+
+#content {
+  display: flex;
+  justify-content: space-evenly;
 }
