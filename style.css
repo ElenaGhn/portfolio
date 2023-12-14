@@ -1,55 +1,85 @@
-h1,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h4,
 h5,
-h3,
-.miniTitle,
-.description {
-  color: #f7fdfc;
-  text-shadow: 2px 2px 4px black;
+h3 {
+  color: #000000;
+  text-shadow: 1px 1px 4px black;
 }
 
 .headerSection {
   width: 100%;
   min-height: 500px;
   max-height: 800px;
-  height: 100vh;
-  background-size: cover;
+  height: 500px;
   background-repeat: no-repeat;
 }
+
+.firstTittle {
+  padding: 150px 0 0 180px;
+  font-size: 75px;
+
+}
+
 .headerSection::before {
   content: '';
-  background-image: url(assets/technology.jpg);
+  background-image: url(assets/tree-736877_1280.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: 50px;
   left: 0px;
-  opacity: 0.9;
+  opacity: 1;
   z-index: -1;
 }
+
 .font-weight-bold {
   font-weight: 700 !important;
 }
 
-.circle {
-  width: 19rem;
-  height: 19rem;
-  border-radius: 20% 1% 20% 1%;
-  background-image: url(assets/nature-g.jpg);
+
+.circleContentWwrapper {
+  margin-top: 40px;
+  margin-left: 240px;
+}
+
+#textLine::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 230px;
+  top: 300px;
+  bottom: 500px;
+  border: 1px solid;
+  border-width: 0 0 0 2px;
+}
+
+.btnCards{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease ;
+
 }
 
 .footer-container {
-  content: '';
-  background-image: url(assets/technology.jpg);
-  background-size: cover;
+  background: linear-gradient(0deg, rgb(5, 46, 51) 5%, rgba(0,0,0,0.03125) 100%);
 }
 
 #content {
   display: flex;
   justify-content: space-evenly;
 }
+

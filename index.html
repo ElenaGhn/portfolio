@@ -22,40 +22,28 @@
   <body class="p-3">
     <section class="headerSection" id="intrduction">
       <div class="text-light">
-        <h1 class="display-3 pt-3 mx-3 font-weight-bold">
-          Welcome to my Portfolio
+        <h1 class="firstTittle">
+          Welcome.
         </h1>
-        <div class="secondTitle">
-          <h5 class="d-flex justify-content-center text-white m-3">
-            < Enthusiastic Coding lover />
-          </h5>
-        </div>
-        <div class="d-flex justify-content-lg-start start mt-5">
-          <div class="circle mx-md-5">
-            <div class="circle-contentWwrapper">
-              <h6 class="mt-2"><i class="miniTitle">About me</i></h6>
-              <h3 class="text-start mx-4">Elena</h3>
-              <p class="description m-1 text-center text-light">
-                Responsible, creative, open-minded, friendly and
-                ambitious future web developer. This is how I see
-                myself. Now, however, I’d like to belong to some
-                bigger team, bigger organization, which will allow me
-                to work even on bigger projects and have a bigger
-                impact.
-              </p>
-            </div>
-          </div>
+        <div class="circleContentWwrapper" id="textLine">
+          <h2>Elena</h3>
+            <p class="text-light">
+                < Enthusiastic Coding lover /> and future web developer. 
+                <br> Eager to contribute creative solutions to larger projects 
+                <br> and organizations, leveraging technology. Join me on 
+                <br>  this exciting journey of learning and growth 
+                <br>  in the world of software development.
+            </p>
         </div>
       </div>
     </section>
 
     <section class="row pt-5" id="content">
-      <hr class="my-5" />
-      <h2 class="d-inline text-center font-weight-bold mb-3">
-        My Work
-      </h2>
+      <a href="#projectsCards" class="btnCards">
+        My Projects
+      </a>
 
-      <div class="card mb-2 bg-light" style="width: 16rem">
+      <div class="card mb-5 bg-light" style="width: 17rem" id="projectsCard">
         <img
           class="card-img-top my-2"
           src="assets/Cv-Foto.jpg"
@@ -63,10 +51,10 @@
         />
         <div class="card-body text-start">
           <div class="card-body">
-            <h6 class="card-title">My interactive CV</h6>
             <p class="card-text text-dark">
-              Have a look at my responsive CV made of HTML5 and
-              bootstrap 5. PDF for download available.
+              Dive into the representation of my journey with 
+              My Interactive CV, a responsive showcase developed 
+              using HTML5 and Bootstrap 5
             </p>
             <a
               href="https://elenaghn.github.io/cv/"
@@ -77,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="card mb-2 bg-light" style="width: 16rem">
+      <div class="card mb-5 bg-light" style="width: 17rem">
         <img
           class="card-img-top my-2"
           src="assets/work.jpg"
@@ -85,45 +73,20 @@
         />
         <div class="card-body text-start">
           <div class="card-body">
-            <h6 class="card-title">My first Homework</h6>
             <p class="card-text text-dark">
-              First use of HTML5, CSS3 and a little JS. I reproduced
-              ngdevs.net, of course responsive.
+              Embark on my coding journey with MyFirstHomework, Inspired by ngdevs.net, involves the use of HTML5, CSS3 and a touch of JavaScript.
             </p>
             <a
               href="https://elenaghn.github.io/ngDevs_page/"
               target="_blank"
               class="btn btn-secondary"
-              >My first homework</a
+              >NgDevs</a
             >
           </div>
         </div>
       </div>
-      <div class="card mb-2 bg-light" style="width: 16rem">
-        <img
-          class="card-img-top my-2"
-          src="assets/geometry-g.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body text-start">
-          <div class="card-body">
-            <h6 class="card-title">Great Calculator</h6>
-            <p class="card-text text-dark">
-              I am currently programming the Great Calculator with JS,
-              HTML and CSS web programming.
-            </p>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-            >
-              Work in Progress
-            </button>
-          </div>
-        </div>
       </div>
-      <div class="card mb-2 bg-light" style="width: 16rem">
+      <div class="card mb-5 bg-light" style="width: 17rem">
         <img
           class="card-img-top my-2"
           src="assets/abstract-g.jpg"
@@ -131,26 +94,44 @@
         />
         <div class="card-body text-start">
           <div class="card-body">
-            <h6 class="card-title">The Robot Douglas</h6>
             <p class="card-text text-dark">
-              In this project, I will modify and add styles to an HTML
-              robot named Douglas using JS and CSS.
+              This project marks my first foray into Angular development, 
+              aiming to create a user-friendly interface and robust features for online shoppers.
             </p>
-            <button
-              type="button"
+            <a
+              href="https://elenaghn.github.io/shopOnline/"
+              target="_blank"
               class="btn btn-secondary"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-            >
-              Work in Progress
-            </button>
+              > Shop Online</a>
           </div>
         </div>
       </div>
+     <div class="card mb-5 bg-light" style="width: 17rem">
+          <img
+            class="card-img-top my-2"
+            src="assets/geometry-g.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body text-start">
+            <div class="card-body">
+              <p class="card-text text-dark">
+                As a beginner-friendly project, it is currently in the works with 
+                a focus on simplicity, user-friendliness, and essential social networking features.
+              </p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Social Media
+              </button>
+            </div>
+        </div>
     </section>
 
     <hr class="my-4" />
-    <footer class="footer-container w-100 h-auto">
+    <footer class="footer-container">
       <div class="text-center text-light">
         <h4 class="p-3">
           Feel free to contact me! <i class="bi bi-emoji-smile"></i>
