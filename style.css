@@ -144,7 +144,7 @@ font-size: large;
 @media only screen and (max-width: 450px) {
 
  .word{
-  font-size: 5em;
+  font-size: 4em;
     margin:10% 20%;
  }
   
@@ -153,6 +153,6 @@ font-size: large;
   }
 
   .updateParagraph{
-    margin: 0 6px 20px 0;
+    margin: 50px 6px 0px 0;
   }
 }
