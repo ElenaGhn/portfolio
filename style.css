@@ -144,8 +144,8 @@ font-size: large;
 @media only screen and (max-width: 450px) {
 
  .word{
-  font-size: 6em;
-    margin:10% 30%;
+  font-size: 5em;
+    margin:10% 20%;
  }
   
   .contentWrapper {
