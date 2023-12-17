@@ -57,23 +57,24 @@ li a:hover {
 }
 
 .contentWrapper {
-margin-top: 15%;
+margin-top: 25%;
 margin-left: 12%;
+font-size: large;
 
 }
 
 
 .word {
   font-family: 'Bebas Neue', cursive;
-  font-size: xxx-large;  
+  font-size: 8em;  
   position: absolute;
   top: 20%;
-  left: 20%;
-  transform: translate(-50%,-50%);
+  left: 25%;
+  transform: translate(-40%,-40%);
   background-image: linear-gradient(gold, gold);
   background-size: 100% 10px;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: 0 100% ;
    transition: background-size .7s, background-position .5s ease-in-out;
 }
 
@@ -141,15 +142,14 @@ margin-left: 12%;
 
 
 @media only screen and (max-width: 450px) {
- 
 
  .word{
   font-size: 6em;
-    margin:0 30%;
+    margin:10% 30%;
  }
   
   .contentWrapper {
-    margin-top: 65%
+    margin-top: 85%
   }
 
   .updateParagraph{
