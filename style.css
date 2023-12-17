@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
 
 .headerSection::before {
   content: '';
@@ -31,7 +34,7 @@ ul, .navigation {
   top: 0; 
   right: 26px;
   overflow: hidden;
-  background-color: #33333300;
+  background-color: black;
 }
 
 li {
@@ -49,19 +52,20 @@ li a {
 }
 
 li a:hover {
-  background-color: #ffffff23;
-  color: rgb(255, 255, 255);
+  background-image: linear-gradient(gold, gold);
+  color: rgb(0, 0, 0);
 }
 
 .contentWrapper {
 margin-top: 15%;
 margin-left: 12%;
+
 }
 
 
 .word {
   font-family: 'Bebas Neue', cursive;
-  font-size: 8em;
+  font-size: xxx-large;  
   position: absolute;
   top: 20%;
   left: 20%;
@@ -103,7 +107,8 @@ margin-left: 12%;
 
 
 .updateParagraph {
-  margin-top: 25%;
+  margin-top: 11%;
+  margin-right: 2px;
   text-align: end;
   font-size: 13px;
 }
@@ -113,11 +118,14 @@ margin-left: 12%;
 }
 
 
+
 .myProyectsTittle {
   display: inline-block;
   text-align: center;
   font-size: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  margin-bottom: 3rem;
 }
 
 .footer-container {
@@ -128,5 +136,23 @@ margin-left: 12%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
+  background-color: black;
 }
 
+
+@media only screen and (max-width: 450px) {
+ 
+
+ .word{
+  font-size: 6em;
+    margin:0 30%;
+ }
+  
+  .contentWrapper {
+    margin-top: 65%
+  }
+
+  .updateParagraph{
+    margin: 0 6px 20px 0;
+  }
+}
