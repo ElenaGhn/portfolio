@@ -6,16 +6,11 @@
   box-sizing: border-box;
 }
 
-section {
-  background-color: #000000;
-  
-}
-
 .headerSection::before {
   content: '';
   background-image: url(assets/tree-736877_1280.jpg);
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   bottom: 150px;
@@ -30,12 +25,11 @@ ul, .navigation {
   display: flex;
   position: fixed;
   list-style-type: none;
-  width: 100vw;
   justify-content: flex-end; 
   top: 0; 
-  right: 26px;
+  right: 60px;
   overflow: hidden;
-  background-color: black;
+  background-color: transparent;
 }
 
 li {
@@ -57,19 +51,19 @@ li a:hover {
   color: rgb(0, 0, 0);
 }
 
-.contentWrapper {
-margin-top: 25%;
-margin-left: 12%;
-font-size: large;
 
+.contentWrapper {
+  margin-top: 25%;
+  margin-left: 12%;
+  font-size: 20px;
 }
 
 
 .word {
   font-family: 'Bebas Neue', cursive;
-  font-size: 8em;  
+  font-size: 7em;  
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 25%;
   transform: translate(-40%,-40%);
   background-image: linear-gradient(gold, gold);
@@ -78,6 +72,8 @@ font-size: large;
   background-position: 0 100% ;
    transition: background-size .7s, background-position .5s ease-in-out;
 }
+
+
 
 .word:hover {
   background-size: 100% 100%;
@@ -96,8 +92,9 @@ font-size: large;
   box-shadow: 0 2px 10px #999;
   cursor: pointer;
   transition: all 0.5s ease;
-  margin: 20px;
   padding: 12px 18px;
+  margin-top: 55px;
+  margin-left: 25%;
 }
 
 .button:hover {
@@ -140,14 +137,14 @@ font-size: large;
 }
 
 .footer-container {
-   background-color: black;
+ background-color: transparent;
 }
 
 #content {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
-  background: rgb(0,0,0);
+background-color: transparent;
 }
 
 .cardButton {
@@ -168,7 +165,7 @@ font-size: large;
 
   .updateParagraph {
     color: #BBB;
-    margin-right: 56px;
+    margin-right: 30px;
     text-align: end;
     font-size: 16px;
   }
