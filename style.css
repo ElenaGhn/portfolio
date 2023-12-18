@@ -15,7 +15,7 @@
   right: 0px;
   bottom: 150px;
   left: 0px;
-  height: 106vh;
+  height: 100vh;
   opacity: 1;
   z-index: -1;
 }
@@ -104,14 +104,6 @@ font-size: large;
   transform: translateY(-1px);
 }
 
-
-.updateParagraph {
-  margin-top: 11%;
-  margin-right: 2px;
-  text-align: end;
-  font-size: 13px;
-}
-
 .font-weight-bold {
   font-weight: 700 !important;
 }
@@ -127,8 +119,24 @@ font-size: large;
   margin-bottom: 3rem;
 }
 
+.contactFooterContent{
+  padding: 5px;
+  color: white;
+}
+
+#emailHover:hover {
+  color: gold;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+
+}
+
 .footer-container {
-background-color: black;}
+   background-color: black;
+}
 
 #content {
   display: flex;
@@ -142,6 +150,7 @@ background-color: black;}
   font-size: medium;
   box-shadow: 0 0px 8px #000000;
 }
+
 .cardButton:hover {
     background-color: gold;
     color: black;
@@ -151,6 +160,14 @@ background-color: black;}
     transform: translateY(-1px);
   }
 
+
+  .updateParagraph {
+    color: #BBB;
+    margin-right: 56px;
+    text-align: end;
+    font-size: 16px;
+  }
+  
  @media only screen and (max-width: 1024px) {
 
   .headerSection::before {
