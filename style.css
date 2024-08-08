@@ -247,6 +247,10 @@ li a:hover {
     margin-top: 60%;
   }
 
+  .textAboutMe {
+    font-size: 25px
+  ;
+  }
   .updateParagraph {
     margin: 50px 6px 0 0;
   }
@@ -265,7 +269,7 @@ li a:hover {
   }
 
   .textAboutMe {
-    font-size: large;
+    font-size: small;
   }
 
   .button {
