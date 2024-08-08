@@ -1,185 +1,154 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-  </head>
-  <body>
-    <section class="headerSection" id="intrduction">
-      
-    <div class="text-light">
-      <div class="navigation">
-        <ul>
-          <li><a href="mailTo: ellieghn@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
-          <li><a href="https://github.com/ElenaGhn" target="_blank"><i class="bi bi-github"></i></a></li>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous"
+  />
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+</head>
+<body>
+<div class="mainContainer">
+<section class="headerSection" id="intrduction">
+  <div class="text-light">
+    <div class="navigation">
+      <ul>
+        <li><a href="mailto:ellieghn@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
+        <li><a href="https://github.com/ElenaGhn" target="_blank"><i class="bi bi-github"></i></a></li>
       </ul>
-      </div>
-      <div class="contentWrapper">
-        <div class="word">Welcome.</div>
-          <h1>Elena</h1>
-            <h4 class="text-light">
-                < Enthusiastic Coding lover /> and future web developer. 
-                <br> Eager to contribute creative solutions to larger projects 
-                <br> and organizations, leveraging technology. Join me on 
-                <br>  this exciting journey of learning and growth 
-                <br>  in the world of software development.
-            </h4>
-            <a href="#myProjectCards" class="button">
-              See my projects
-            </a>
+    </div>
+    <div class="contentWrapper">
+      <div class="word">Welcome to Elena's Digital <br> Playground</div>
+      <h4 class="textAboutMe">
+        <span id="text1">Ich bin eine begeisterte angehende Webentwicklerin,</span>
+        <span id="text2">die sich für kreative Problemlösungen und moderne Technologien interessiert.</span>
+        <span id="text3">Mit einer Leidenschaft für das Lernen und der Motivation,</span>
+        <span id="text4">an spannenden Projekten mitzuwirken,</span>
+        <span id="text5">freue ich mich darauf, meine Fähigkeiten weiterzuentwickeln</span>
+        <span id="text6">und zur Weiterentwicklung von Software beizutragen.</span>
+      </h4>
+
+      <div class="seeMyProjektsContainer">
+        <a href="#myProjectCards" class="button">
+          See my projects
+        </a>
       </div>
     </div>
-  </section>
-
-    <section class="row m-0 pt-5" id="content">
-      <h1 class="myProyectsTittle">
-        My Projects
-      </h1>
-
-      <div class="card mb-5 bg-light" style="width: 17rem" id="myProjectCards">
-        <img
-          class="card-img-top my-2"
-          src="assets/Cv-Foto.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body text-start">
-          <div class="card-body">
-            <p class="card-text text-dark">
-              Dive into the representation of my journey with 
-              My Interactive CV, a responsive showcase developed 
-              using HTML5 and Bootstrap 5
-            </p>
-            <a
-              href="https://elenaghn.github.io/cv/"
-              target="_blank"
-              class="button cardButton"
-              >My CV</a
-            >
-          </div>
-        </div>
+  </div>
+</section>
+<section class="row m-0 pt-5" id="content">
+  <div class="cardsContainer">
+    <div class="card mb-5 bg-light" id="myProjectCards">
+      <img
+              class="card-img-top my-2"
+              src="assets/Cv-Foto.jpg"
+              alt="Card image cap"
+      />
+      <div class="card-body text-start">
+        <p class="card-text text-dark">
+          Dive into the representation of my journey with
+          My Interactive CV, a responsive showcase developed
+          using HTML5 and Bootstrap 5
+        </p>
+        <a
+                href="https://elenaghn.github.io/cv/"
+                target="_blank"
+                class="button cardButton"
+        >My CV</a
+        >
       </div>
-      <div class="card mb-5 bg-light" style="width: 17rem">
-        <img
-          class="card-img-top my-2"
-          src="assets/work.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body text-start">
-          <div class="card-body">
-            <p class="card-text text-dark">
-              Embark on my coding journey with MyFirstHomework, Inspired by ngdevs.net, involves the use of HTML5, CSS3 and a touch of JavaScript.
-            </p>
-            <a
-              href="https://elenaghn.github.io/ngDevs_page/"
-              target="_blank"
-              class="button cardButton"
-              >NgDevs</a
-            >
-          </div>
-        </div>
+    </div>
+    <div class="card mb-5 bg-light">
+      <img
+              class="card-img-top my-2"
+              src="assets/work.jpg"
+              alt="Card image cap"
+      />
+      <div class="card-body text-start">
+        <p class="card-text text-dark">
+          Embark on my coding journey with MyFirstHomework, Inspired by ngdevs.net, involves the use of HTML5, CSS3 and a touch of JavaScript.
+        </p>
+        <a
+                href="https://elenaghn.github.io/ngDevs_page/"
+                target="_blank"
+                class="button cardButton"
+        >NgDevs</a
+        >
       </div>
+    </div>
+    <div class="card mb-5 bg-light">
+      <img
+              class="card-img-top my-2"
+              src="assets/abstract-g.jpg"
+              alt="Card image cap"
+      />
+      <div class="card-body text-start">
+        <p class="card-text text-dark">
+          This project marks my first foray into Angular development,
+          aiming to create a user-friendly interface and robust features for online shoppers.
+        </p>
+        <a
+                href="https://elenaghn.github.io/shopOnline/"
+                target="_blank"
+                class="button cardButton"
+        > Shop Online</a
+        >
       </div>
-      <div class="card mb-5 bg-light" style="width: 17rem">
-        <img
-          class="card-img-top my-2"
-          src="assets/abstract-g.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body text-start">
-          <div class="card-body">
-            <p class="card-text text-dark">
-              This project marks my first foray into Angular development, 
-              aiming to create a user-friendly interface and robust features for online shoppers.
-            </p>
-            <a
-              href="https://elenaghn.github.io/shopOnline/"
-              target="_blank"
-              class="button cardButton"
-              > Shop Online</a>
-          </div>
-        </div>
-      </div>
-     <div class="card mb-5 bg-light" style="width: 17rem">
-          <img
-            class="card-img-top my-2"
-            src="assets/geometry-g.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body text-start">
-            <div class="card-body">
-              <p class="card-text text-dark">
-                As a beginner-friendly project, it is currently in the works with 
-                a focus on simplicity, user-friendliness, and essential social networking features.
-              </p>
-              <a
+    </div>
+    <div class="card mb-5 bg-light">
+      <img
+              class="card-img-top my-2"
+              src="assets/geometry-g.jpg"
+              alt="Card image cap"
+      />
+      <div class="card-body text-start">
+        <p class="card-text text-dark">
+          As a beginner-friendly project, it is currently in the works with
+          a focus on simplicity, user-friendliness, and essential social networking features.
+        </p>
+        <a
                 href="https://elenaghn.github.io/social-media"
                 target="_blank"
                 class="button cardButton"
-              >
-                Social Media
-            </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer-container">
-      <div class="footerContent">
-        <h4 class="contactFooterContent myProyectsTittle">
-          Contact me!
-          <a class="contactFooterContent" href="mailTo: ellieghn@gmail.com" target="_blank"><i class="bi bi-envelope" id="emailHover"></i></a> 
-        </h4>
+        >
+          Social Media
+        </a>
       </div>
-      <p class="updateParagraph">Last Update 15.12.2023</p>
-
-    </footer>
-
-    <!-- Modal 
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title" id="staticBackdropLabel">
-              Next Project
-            </h6>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-footer">
-            <p>
-              <i class="bi bi-hourglass-split"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-
-  </body>
+    </div>
+  </div>
+</section>
+<footer class="footer-container">
+  <div class="footerContent">
+    <h4 class="contactFooterContent myProyectsTittle">
+      Contact me!
+      <a class="contactFooterContent" href="mailto:ellieghn@gmail.com" target="_blank"><i class="bi bi-envelope" id="emailHover"></i></a>
+    </h4>
+  </div>
+  <p class="updateParagraph">Last Update 15.12.2023</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const spans = document.querySelectorAll('.textAboutMe span');
+    spans.forEach((span, index) => {
+      setTimeout(() => {
+        span.style.opacity = '1';
+        span.style.width = '100%';
+      }, index * 1000); // Timing für sanfte Übergänge
+    });
+  });
+</script>
+</div>
+</body>
 </html>
