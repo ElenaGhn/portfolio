@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('assets/catMoon.jpg');
+  background-image: url('assets/abstraktHintergrund.jpg');
   background-size: cover;
   color: white;
 }
@@ -13,9 +13,33 @@ body {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
-  background: rgba(0, 0, 0, 0.7); /* Added background for better readability */
+  box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.2); /* Added background for better readability */
   border-radius: 10px;
+}
+.falling-letters-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.falling-letter {
+  position: absolute;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 0 0 5px white;
+  animation: fall 5s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500%);
+    opacity: 0;
+  }
 }
 
 /* Header Section and Title Animation */
@@ -52,11 +76,12 @@ body {
   line-height: 1.5;
   color: white;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparenter, hellgrauer Hintergrund */
   border-radius: 6px 36px 6px 36px ; /* Abgerundeter Container */
   max-width: 90%; /* Responsiv: passt sich der Breite des Containers an */
   margin: 70px auto; /* Zentriert den Container */
   text-align: center; /* Text zentrieren */
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+
 }
 
 /* Für kleinere Bildschirme */
@@ -171,7 +196,7 @@ body {
 .footer-container {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
