@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('assets/abstraktHintergrund.jpg');
+  background-image: url('assets/background.jpg');
   background-size: cover;
   color: white;
 }
