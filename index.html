@@ -25,9 +25,9 @@
       <div class="contentWrapper">
         <div class="word">Welcome to Elena's Digital <br> Playground</div>
         <h4 class="textAboutMe">
-          Ich bin eine begeisterte Webentwicklerin, die sich für kreative Problemlösungen und moderne Technologien interessiert.
-          Mit einer Leidenschaft für das Lernen und der Motivation, an spannenden Projekten mitzuwirken,
-          freue ich mich darauf, meine Fähigkeiten weiterzuentwickeln und zur Weiterentwicklung von Software beizutragen.
+          As an enthusiastic web developer with a passion for creative problem-solving and modern technologies,
+          I am excited to continuously learn and contribute to innovative projects.
+          I am eager to further develop my skills and make a meaningful impact in the world of software development.
         </h4>
       </div>
     </div>
@@ -72,41 +72,54 @@
       </div>
     </div>
   </section>
-  <footer class="footer-container">
-    <div class="footerContent">
-      <h4 class="contactFooterContent">
-        Contact me! <a class="contactFooterContent" href="mailto:ellieghn@gmail.com" target="_blank"><i class="bi bi-envelope" id="emailHover"></i></a>
-      </h4>
-    </div>
-    <p class="updateParagraph">Last Update 15.12.2023</p>
+  <footer>
+    <p class="updateParagraph">Last Update 12.08.2024</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script>
     const leftColumn = document.querySelector('.left-column');
     const rightColumn = document.querySelector('.right-column');
+    const maxLetters = 50; // Maximale Anzahl von Buchstaben
 
-    function createLetter(column) {
+    let leftLettersCount = 0;
+    let rightLettersCount = 0;
+
+    function createLetter(column, currentCount) {
+      if (currentCount >= maxLetters) return;
+
       const letter = document.createElement('span');
       letter.classList.add('falling-letter');
-      letter.textContent = String.fromCharCode(65 + Math.floor(Math.random() * 26)); // Random letter A-Z
+      letter.textContent = String.fromCharCode(65 + Math.floor(Math.random() * 26)); // Zufälliger Buchstabe A-Z
 
-      // Position the letter randomly within the column width
+      // Positioniere den Buchstaben zufällig innerhalb der Spaltenbreite
       letter.style.left = `${Math.random() * 100}%`;
-      letter.style.animationDuration = `${4 + Math.random() * 5}s`; // Random duration between 4s and 7s
+      letter.style.animationDuration = `${4 + Math.random() * 5}s`; // Zufällige Dauer zwischen 4s und 9s
       column.appendChild(letter);
 
-      // Remove the letter after it falls out of view
+      // Erhöhe die Zählvariable für die entsprechende Spalte
+      if (column === leftColumn) {
+        leftLettersCount++;
+      } else {
+        rightLettersCount++;
+      }
+
+      // Entferne den Buchstaben, nachdem er aus dem Bild verschwunden ist, und verringere die Zählvariable
       letter.addEventListener('animationend', () => {
         letter.remove();
+        if (column === leftColumn) {
+          leftLettersCount--;
+        } else {
+          rightLettersCount--;
+        }
       });
     }
 
-    // Create a new letter every 500ms in both columns
-    setInterval(() => createLetter(leftColumn), 500);
-    setInterval(() => createLetter(rightColumn), 500);
-
+    // Erstelle alle 500ms einen neuen Buchstaben in beiden Spalten
+    setInterval(() => createLetter(leftColumn, leftLettersCount), 500);
+    setInterval(() => createLetter(rightColumn, rightLettersCount), 500);
   </script>
+
 
 </div>
 </body>

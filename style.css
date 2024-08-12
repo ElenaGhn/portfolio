@@ -119,6 +119,8 @@ body {
   overflow: hidden;
   border-radius: 10px;
   background-color: white; /* Set background color to white */
+  box-shadow: 0 0 5px white;
+
 }
 
 .card-img-top {
@@ -193,26 +195,10 @@ body {
 
 }
 /* Footer */
-.footer-container {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-.footerContent {
-  margin-bottom: 10px;
-}
-
-.contactFooterContent {
-  color: white;
-  text-decoration: none;
-}
-
-
 .updateParagraph {
-  left: 20px;
-  bottom: 20px;
+  text-align: end;
+  padding: 30px;
+
 }
 
 /* Responsive Styles */
