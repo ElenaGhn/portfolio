@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  url('assets/workplace.jpg');
+  url('assets/sunset.jpg');
   background-size: cover;
   color: white;
 }
@@ -118,9 +118,9 @@ body {
   width: 100%;
   max-width: 300px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 16px;
   background-color: white; /* Set background color to white */
-  box-shadow: 0 0 5px white;
+  box-shadow: 4px 4px rgba(255, 255, 255, 0.1);
 
 }
 
