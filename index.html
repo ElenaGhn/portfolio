@@ -90,7 +90,7 @@
   <script>
     const leftColumn = document.querySelector('.left-column');
     const rightColumn = document.querySelector('.right-column');
-    const maxLetters = 50; // Maximale Anzahl von Buchstaben
+    const maxLetters = 50;
 
     let leftLettersCount = 0;
     let rightLettersCount = 0;
@@ -102,19 +102,16 @@
       letter.classList.add('falling-letter');
       letter.textContent = String.fromCharCode(65 + Math.floor(Math.random() * 26)); // Zufälliger Buchstabe A-Z
 
-      // Positioniere den Buchstaben zufällig innerhalb der Spaltenbreite
       letter.style.left = `${Math.random() * 100}%`;
       letter.style.animationDuration = `${4 + Math.random() * 5}s`; // Zufällige Dauer zwischen 4s und 9s
       column.appendChild(letter);
 
-      // Erhöhe die Zählvariable für die entsprechende Spalte
       if (column === leftColumn) {
         leftLettersCount++;
       } else {
         rightLettersCount++;
       }
 
-      // Entferne den Buchstaben, nachdem er aus dem Bild verschwunden ist, und verringere die Zählvariable
       letter.addEventListener('animationend', () => {
         letter.remove();
         if (column === leftColumn) {
@@ -125,7 +122,6 @@
       });
     }
 
-    // Erstelle alle 500ms einen neuen Buchstaben in beiden Spalten
     setInterval(() => createLetter(leftColumn, leftLettersCount), 500);
     setInterval(() => createLetter(rightColumn, rightLettersCount), 500);
   </script>
